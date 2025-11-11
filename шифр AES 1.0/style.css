@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #242424);
+    color: #e6e6e6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+  
+.container {
+    width: 80%;
+    max-width: 800px;
+    background: rgba(20, 20, 20, 0.9);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+    animation: slideIn 1s ease;
+}
+  
+h1 {
+    text-align: center;
+    color: #00ffff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px #00ffff;
+}
+  
+.section {
+    margin-bottom: 40px;
+    animation: fadeUp 1s ease;
+}
+  
+.section h2 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+  
+textarea, input {
+    width: 100%;
+    background: #111;
+    border: 1px solid #333;
+    color: #0ff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    resize: none;
+    transition: 0.3s;
+}
+  
+textarea:focus, input:focus {
+    border-color: #00ffff;
+    box-shadow: 0 0 10px #00ffff44;
+    outline: none;
+}
+  
+button {
+    width: 100%;
+    background: linear-gradient(90deg, #00bcd4, #00838f);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+button:hover {
+    background: linear-gradient(90deg, #00ffff, #00bcd4);
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #00ffff66;
+}
+  
+.console {
+    background: #0b0b0b;
+    border: 1px solid #222;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px #00ffff33;
+}
+  
+.console h3 {
+    color: #00ffff;
+    text-shadow: 0 0 6px #00ffffaa;
+}
+  
+#consoleLog {
+    font-family: monospace;
+    font-size: 14px;
+    color: #0ff;
+    background: #111;
+    height: 150px;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #333;
+}
+  
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+  
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+  
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+  
